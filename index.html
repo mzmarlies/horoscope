@@ -9,6 +9,18 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Dosis:wght@300;400;500&family=Montserrat:ital@1&family=Old+Standard+TT&family=Open+Sans:wght@400;600&family=Quicksand:wght@300&display=swap"
         rel="stylesheet">
+        <link href="https://www.flaticon.com/free-icons/aries" title="aries icons">
+        <link href="https://www.flaticon.com/free-icons/taurus" title="taurus icons">
+        <link href="https://www.flaticon.com/free-icons/gemini" title="gemini icons">
+        <link href="https://www.flaticon.com/free-icons/cancer" title="cancer icons"">
+        <link href="https://www.flaticon.com/free-icons/leo" title="leo icons">
+        <link href="https://www.flaticon.com/free-icons/virgo" title="virgo icons">
+        <link href="https://www.flaticon.com/free-icons/libra" title="libra icons">
+        <link href="https://www.flaticon.com/free-icons/scorpio" title="scorpio icons">
+        <link href="https://www.flaticon.com/free-icons/sagittarius" title="sagittarius icons">
+        <link href="https://www.flaticon.com/free-icons/capricorn" title="capricorn icons">
+        <link href="https://www.flaticon.com/free-icons/aquarius" title="aquarius icons">
+        <link href="https://www.flaticon.com/free-icons/pisces" title="pisces icons">
     <title>Get Your Horoscope</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -17,17 +29,17 @@
     <header>
         <div class="wrapper heading-text">
             <h1>Look to the Sky</h1>
-            <a href="#selection">
+            <button class="goToMainSection">
                 Click to see what your past, present, or future holds.<span>🔮</span>
-            </a>
+            </button>
         </div>
     </header>
     <main>
         <section class="selection" id="selection">
             <div class="wrapper">
-                <form action="#">
+                <form action="#" class="userSelection" name="userSelection" id="userSelection">
                     <label for="signSelection" class="sr-only">Select Sign:</label>
-                    <select name="signSelection" id="signSelection">
+                    <select class="signSelect" name="signSelection" id="signSelection">
                         <option value disabled selected>Select Your Sign</option>
                         <option value="Aries">Aries</option>
                         <option value="Taurus">Taurus</option>
@@ -44,33 +56,37 @@
                     </select>
 
                     <label for="daySelection" class="sr-only">Select Day</label>
-                    <select name="daySelection" id="daySelection">
+                    <select class="daySelect" name="daySelection" id="daySelection">
                         <option value disabled selected>Select Day</option>
                         <option value="Today">Today</option>
                         <option value="Yesterday">Yesterday</option>
                         <option value="Tomorrow">Tomorrow</option>
                     </select>
 
-                    <button type="submit">See Results:</button>
+                    <button class="submitButton" type="submit">See Results:</button>
                 </form>
             </div>
         </section>
 
-        <section class="results">
+        <section class="horoscopeSection" id="horoscopeId">
             <div class="wrapper">
-                <p class="results"></p>
-                <a href="#selection">Go Back Up to Submit Selections</a>
+                <div class="horoscopeResult">
+                    <a class="backToSubmit">
+                        Go Back Up to Submit Selections
+                    </a>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <a href="https://www.marliesclaire.com/">Made by Marlies Zimmer</a>
+        <a href="https://www.flaticon.com/free-icons/zodiac" title="zodiac icons">Zodiac icons created by Freepik - Flaticon</a>
     </footer>
 
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="script.js"></script>
 </body>
 
 </html>
