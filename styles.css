@@ -277,3 +277,14 @@ footer a {
         font-size: 1.5rem;
     }
 }
+
+@media (max-width: 480px) {
+    h3,
+    p,
+    a,
+    .backToSubmit {
+        font-size: 1.3rem;
+    }
+}
+
+horoscopeHtml
