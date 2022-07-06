@@ -126,7 +126,11 @@ select,
     border: 1px solid white;
     border-radius: 20px;
     margin: 0 50px;
+    padding: 0;
+    margin: 20px;
+    color: white;
 }
+
 
 .horoscopeHtml {
     display: flex;
@@ -151,12 +155,10 @@ a,
     margin: 0 auto;
 }
 
-.horoscopeAndNumber {
-    padding: 0;
-    margin: 20px;
-    color: white;
-    /* background-color: rgba(0, 0, 0, 0.295); */
+.backToSubmit {
+    cursor: pointer;
 }
+
 
 h3 {
     font-size: 2.6rem;
@@ -225,4 +227,53 @@ footer a {
     color: #7deefb;
     font-size: 1.3rem;
     background-color: black;
+}
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1275px) {
+    h3,
+    p,
+    a,
+    .backToSubmit {
+        font-size: 2rem;
+    }
+
+    .horoscopeHtml img {
+        height: 20vh;
+        justify-content: space-between;
+    }
+}
+
+
+
+@media (max-width: 1070px) {
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .selection {
+        background-size: cover;
+    }
+}
+
+
+
+@media (max-width: 850px) {
+    .horoscopeHtml img {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 520px) {
+    h3,
+    p,
+    a,
+    .backToSubmit {
+        font-size: 1.5rem;
+    }
 }
