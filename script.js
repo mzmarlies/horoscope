@@ -48,10 +48,10 @@ app.getUserSelection = (sign, day) => {
         app.horoscopeResult.html(htmlToAdd);
         const userSign = $('#signSelection').val();
         if (userSign === "Aries" || userSign === "Leo" || userSign === "Sagittarius") {
-            // app.horoscopeSection.removeClass('horoscopeSection');
-            // app.horoscopeSection.removeClass('earthSign');
-            // app.horoscopeSection.removeClass('airSign');
-            // app.horoscopeSection.removeClass('waterSign');
+            app.horoscopeSection.removeClass('horoscopeSection');
+            app.horoscopeSection.removeClass('earthSign');
+            app.horoscopeSection.removeClass('airSign');
+            app.horoscopeSection.removeClass('waterSign');
             app.horoscopeSection.addClass('fireSign');
         } else if (userSign === "Taurus" || userSign === "Virgo" || userSign === "Capricorn") {
             app.horoscopeSection.removeClass('horoscopeSection');
